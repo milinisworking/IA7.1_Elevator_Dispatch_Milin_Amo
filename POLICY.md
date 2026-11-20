@@ -20,6 +20,7 @@ Fill in this template yourself before asking the builders to implement it. Short
 
 - My deterministic tie-breaker: smallest floor distance abs, then lower load_kg, then alphabetical ID.
 - A tradeoff I accept: the caller may wait for a car that is farther away so that a second car stays parked. Above 130 kg I do the opposite: I activate the idle car so that about five riders are not delayed by an extra stop.
+- Proxies: floor distance isn’t waiting time, keeping B parked isn’t proven energy saving, load/65 is only an occupancy estimate, and 130 kg is my judgement call.
 
 ## Predictions before implementation
 

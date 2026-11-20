@@ -4,7 +4,7 @@ Fill in this template with actual observations. Short bullets are sufficient.
 
 Name / student ID: Milin Amornruttanadecha / 6480303
 
-Tool, visible software version and model(s): Claude Code version Opus 5.5
+Tool, visible software version and model(s): Claude Code version 2.1.329
 
 Route: automatic workers
 
