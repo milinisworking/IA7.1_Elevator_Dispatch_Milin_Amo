@@ -6,9 +6,9 @@ Fill in this template yourself before asking the builders to implement it. Short
 
 - What I prioritise:
 
-1. Avoid adding stops for people already aboard.
-2. Use a car that is already travelling past the caller instead of activating a second car.
-3. If neither applies, shorten the pickup distance for the caller. People already aboard come first: they have already started their journey, and every added stop delays all of them.
+1. Prefer a car that already stops at the caller's floor, so no stop is added and no second car is activated.
+2. Otherwise, reuse a car already travelling past the caller instead of activating a second car, but only when the extra stop delays about 2 riders or fewer (load_kg <= 130). I accept that small delay to keep the idle car parked.
+3. Otherwise, choose the nearest eligible car. A heavier car (more than about 2 riders) is not given an extra stop when another eligible car can serve the caller.
 
 - My exact selection rule: (applied only to the IDs returned by rules.eligible_ids):
 
